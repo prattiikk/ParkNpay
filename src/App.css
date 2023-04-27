@@ -1,0 +1,728 @@
+@import url("https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;600;700&family=Inter&family=Poppins:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;600;700&family=Inter&family=Poppins:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Familjen+Grotesk:wght@400;600;700&family=Inter&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Familjen+Grotesk:wght@400;600;700&family=Inter&family=Montserrat:wght@400;500;600&display=swap");
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+
+body {
+  background-color: black;
+  font-family: "Poppins", sans-serif;
+}
+
+
+a,.Link {
+  text-decoration: none;
+  color: white;
+}
+
+hr {
+  border: 1px solid white;
+  width: 50%;
+  margin: 0 auto;
+}
+
+
+
+
+
+/* Navigation-Bar styling */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  height: 60px;
+  align-items: center;
+  font-size: 1.2em;
+}
+/* logo */
+.navbar__logo {
+  display: block;
+  margin: 0 60px;
+}
+.navbar__logo span {
+  color: #bb86fc;
+}
+/* navbar menu */
+.navbar__menu {
+  width: 600px;
+  margin: 0 60px;
+}
+.navbar__menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar__menu .Link {
+  padding: 8px 18px;
+  border: 1px transparent;
+  transition: ease-in 1s;
+}
+.navbar__menu span {
+  color: #bb86fc;
+  transition: ease 1s;
+}
+.navbar__menu span:hover {
+  color: white;
+}
+
+.navbar__menu  .Link:hover {
+  background-color: #bb86fc;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* main hero section */
+
+main {
+  display: grid;
+  max-width: 1440px;
+  height: 500px;
+  margin: 100px auto;
+  padding: 10px;
+  grid-template-columns: 1fr 1fr;
+}
+.main__text {
+  border: 1px white;
+}
+.main__text h1 {
+  font-family: "Pathway Extreme", sans-serif;
+  font-size: 4em;
+  margin: 30px 60px;
+  color: white;
+}
+
+.main__text span {
+  font-size: 2em;
+  color: #bb86fc;
+}
+
+.main__text p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5em;
+  line-height: 1.3em;
+  margin: 30px 60px;
+  color: white;
+  padding-bottom: 10px;
+}
+
+.main__text .a {
+  font-size: 1.5em;
+  padding: 15px 30px;
+  margin: 50px 60px;
+  border: 1px solid white;
+  transition: ease-in 1s;
+}
+.main__text .a:hover {
+  background-color: #bb86fc;
+}
+.main__img {
+  background-image: url(images/HD-wallpaper-black-background-car-cars-vehicles.jpeg);
+  padding: 10px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* card-section */
+
+.card-deck {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 200px;
+}
+.card-deck__heading {
+  color: white;
+  font-size: 7rem;
+  font-family: "Bebas Neue", cursive;
+}
+.card-deck__heading span {
+  color: #bb86fc;
+  font-size: 14rem;
+}
+.cards {
+  color: white;
+  display: grid;
+  max-width: 1440px;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 200px;
+  margin-top: 50px;
+  padding: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* single card styling */
+.card__child {
+  background-color: #120028;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 60px 20px;
+  padding: 40px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.card__child:hover {
+  background-color: #34234a;
+}
+.card__child h4 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2em;
+  margin: 12px auto;
+  text-decoration: underline black;
+}
+.card__child p {
+  margin: 16px auto;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2em;
+  line-height: 1.5;
+  text-align: center;
+  opacity: 0.5;
+}
+.card__child p:hover{
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Ev-section */
+.ev {
+  color: white;
+  display: grid;
+  max-width: 1440px;
+  height: 600px;
+  margin: 200px auto;
+  padding: 10px;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* Ev-section image */
+.ev__left {
+  background-image: url(images/ev-charge.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+/* Ev-section right */
+.ev__right {
+  display: flex;
+  flex-direction: column;
+  margin: auto 50px;
+  text-align: center;
+  padding: 20px;
+}
+.ev__right span {
+  font-size: 2em;
+  color: #bb86fc;
+}
+.ev__right h3 {
+  font-size: 2em;
+  margin: 10px 10px;
+  padding-bottom: 30px;
+  line-height: 1.3;
+}
+.ev__left p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2em;
+  line-height: 1.5;
+  margin: 10px 10px;
+  padding-bottom: 20px;
+  opacity: 0.7;
+}
+
+.ev__right a {
+  border: 1px solid white;
+  margin: 10px 120px;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  transition: ease 1s;
+}
+
+.ev__right a:hover {
+  color: black;
+  background-color: #bb86fc;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* testimonials section */
+
+.testimonials {
+  max-width: 1440px;
+  margin: 100px auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.testimonials__heading{
+  color: white;
+  width: 80%;
+  margin: 120px auto;
+  font-size: 3em;
+  font-family:  "Bebas Neue", cursive;
+  text-align: center;
+}
+.testimonials__heading span{
+  color: #bb86fc;
+  font-size: 3em;
+}
+
+.card:nth-of-type(1) {
+  grid-column: 1/3;
+  grid-row: 1/2;
+}
+.card:nth-of-type(2) {
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+.card:nth-of-type(3) {
+  grid-row: 2/3;
+  grid-column: 1/2;
+}
+.card:nth-of-type(4) {
+  grid-row: 2/3;
+  grid-column: 2/4;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  margin-bottom: 10px;
+}
+
+.card__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.card__header h3 {
+  font-size: 15px;
+}
+.card__header p {
+  opacity: 50%;
+}
+.card__lead {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+.card__img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 2px solid #6d23db;
+  margin-right: 10px;
+}
+.card--bg-purple {
+  background: #120028;
+  color: white;
+  background-repeat: no-repeat;
+  background-position: top 10px right 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+footer {
+  margin: 80px 60px;
+  text-align: center;
+  color: white;
+}
+footer h2 {
+  font-size: 2em;
+  margin: 40px auto;
+}
+footer span {
+  color: #bb86fc;
+}
+footer p {
+  line-height: 1.5em;
+  opacity: 60%;
+}
+
+.icons ul {
+  display: flex;
+  width: 800px;
+  margin: 60px auto;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.icons a {
+  text-decoration: none;
+  color: white;
+  transition: ease 1s;
+}
+.icons a:hover {
+  color: #bb86fc;
+  text-decoration: underline;
+  text-decoration-thickness: 4px;
+}
+.copyright {
+  font-size: 14px;
+  color: rgb(174, 174, 174);
+}
+
+
+
+
+
+
+  /* form sectin */
+  .form__wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .form__right{
+    display: flex;
+    flex-direction: column;
+  }
+  .form__heading{
+    text-align: center;
+    font-size: 0.8em;
+    color: white;
+    margin: 80px auto ;
+    margin-bottom: 0px;
+    padding-bottom: 0% ;
+  }
+  .form__heading span{
+    color: #bb86fc;
+    font-size: 2.5em;
+  }
+  .form__heading p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: medium;
+    opacity: 0.7;
+    width: 500px;
+  }
+  .search-form {
+    width: 600px;
+    display: grid;
+    grid-template-rows: repeat(1fr,4);
+    row-gap: 2px;
+    background-color: #31006c;
+    padding: 14px;
+    margin: 10px auto;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+  }
+  
+  .form-group {
+    margin: 0px 1px;
+    display: grid;
+    grid-template-columns: 0.7fr 1.3fr;
+    padding: 6px;
+  }
+  
+  label {
+    font-weight: bold;
+    font-size: 1.6em;
+    margin: 22px 8px;
+  }
+  
+  input[type="text"],
+  input[type="date"],
+  input[type="time"] {
+    align-self: center;
+    border: none;
+    padding: 10px;
+    background-color: black;
+    color: #eee;
+    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.2);
+    font-size: 1.3em;
+    width: 100%;
+    margin-right: 10px;
+  }
+  
+  input[type="time"]::-webkit-calendar-picker-indicator {
+    background-color: white;
+    border: none;
+    padding: 0;
+    margin-left: 5px;
+    cursor: pointer;
+  }
+  
+  input[type="time"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  button[type="submit"] {
+    background-color: black;
+    border: 2px solid white;
+    color: #eee;
+    border: none;
+    padding: 14px 24px;
+    font-size: 1.6em;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #bb86fc;
+    color: white;
+  }
+  
+
+
+
+
+
+
+
+  /* map */
+  #map {
+    width: 100%;
+    height: 800px;
+    padding: 14px;
+    margin: 100px auto;
+    border: 1px solid gray;
+  }
+  
+
+
+
+
+
+
+
+
+
+ /* find section css styling */
+
+
+  /* Guarantee your Space */
+  .find-sec-a{
+    width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 100px auto;
+    height: 400px;
+  }
+  .find-sec-a-left{
+    background-image: url(images/empty-parking-space.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid black;
+  }
+  .find-sec-a-right{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    text-align: center;
+    
+  }
+  .main-text-sec-a{
+    margin: auto 20px;
+    font-size: 2em;
+    font-family: 'Poppins',sans-serif;
+    color: white;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+  .main-text-sec-a span{
+    font-size: 2.6em;
+    color: #bb86fc;
+  }
+  .main-text-sec-a-sub{
+    color: white;
+    margin: 10px 20px;
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+    opacity: 0.5;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* How does it work? section styling */
+
+  .learn-sec-wrapper{
+    width: 1440px;
+    color: white;
+    
+}
+.learn-sec-wrapper div{
+    text-align: center;
+    margin: 20px auto;
+    padding: 60px 60px;
+}
+.learn-sec-wrapper h2{
+    margin: 10px 40px;
+    font-family: "Bebas Neue", cursive;
+    font-size: 2.5em;
+}
+.learn-sec-wrapper h2 span{
+    color: #bb86fc;
+    font-size: 2.6em;
+    font-weight: 600;
+}
+.learn-sec-wrapper p{
+    font-family:  "Montserrat", sans-serif;
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+
+.learn-sec-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 0;
+    
+}
+
+.learn__child{
+    border: 1px solid #120028;
+    background-color: #120028;;
+    color: white;
+}
+
+.learn__child:nth-of-type(1){
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+.learn__child:nth-of-type(2){
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.learn__child:nth-of-type(3){
+    grid-column: 2/4;
+    grid-row: 3/4;
+}
+.learn__child:nth-of-type(4){
+    grid-column: 3/4;
+    grid-row: 1/3;
+}
+.learn__child:nth-of-type(5){
+    grid-column: 1/2;
+    grid-row: 2/4;
+}
+
+#first{
+    width: 80%;
+    background-image: url(images/asthetic-park-1.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#second{
+    width: 80%;
+    background-image: url(images/asthetic-park-2.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.learn-sec-container .learn__child h4{
+    font-family:  "Montserrat", sans-serif;
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    font-weight: 900;
+
+}
+.learn-sec-container .learn__child p{
+    font-family: "Montserrat", sans-serif;
+    font-size: 1em;
+    line-height: 1.5;
+    padding: 10px 0px;
+}
+.learn-sec-container .learn__child span{
+    color: #bb86fc;
+    font-size: 2.4em;
+}
+.main-text__link{
+  font-size: 1.5em;
+  padding: 15px 30px;
+  margin: 50px 60px;
+  border: 1px solid white;
+  transition: ease-in 1s;
+}
+.main-text__link:hover{
+  background-color: #bb86fc;
+}
+
+
