@@ -1,8 +1,20 @@
 import React from "react";
+import axios from "axios";
 // eslint-disable-next-line 
 import Map from "../components/Map";
 
 const Find = () => {
+  async function position(data){
+    let info=await axios.post('user/near',{
+      latitude:data.coords.latitude,
+      longitude:data.coords.longitude,
+      radius:100
+     })
+     console.log(info.data[0])
+   }
+  function near(){
+         navigator.geolocation.getCurrentPosition(position);
+  }
   return (
     <>
       <div class="form__wrapper">
@@ -35,7 +47,7 @@ const Find = () => {
               <label for="time">Time </label>
               <input type="time" id="time" name="time" />
             </div>
-            <button type="submit">Search</button>
+            <button onClick={near} type="submit">Search</button>
           </form>
         </div>
       </div>

@@ -15,6 +15,7 @@ import {
 } from "react-router-dom";
 
 import './App.css';
+import Login from './pages/login';
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
       <Route path="/" element={<Home/>} />
       <Route path="/how" element={<How/>} />
       <Route path="/find" element={<Find/>} />
+      <Route path="/login" element={<Login/>} />
      </Routes>
     <Footer/> 
       
