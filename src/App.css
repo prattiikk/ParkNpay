@@ -497,6 +497,7 @@ footer p {
   input[type="text"],
   input[type="date"],
   input[type="time"] {
+  
     align-self: center;
     border: none;
     padding: 10px;
@@ -725,4 +726,86 @@ footer p {
   background-color: #bb86fc;
 }
 
+
+
+
+
+
+/* login-form styling */
+.login-form-wrapper .login-form {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin: 2px auto;
+  padding: 40px;
+  border: 2px solid #ccc;
+  background-color: #120028;
+} 
+.login-form-wrapper .login-form__label {
+  text-transform: capitalize;
+  font-family: 'Poppins',sans-serif;
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: white;
+}
+.login-form-wrapper .login-form__input {
+  padding: 10px;
+  background-color: black;
+  border-radius: 3px;
+  border: 1px solid #39007f;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.login-form-wrapper .login-form__button {
+  color: #fff;
+  padding: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: 'Poppins',sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  border: 1px solid #39007f;
+}
+
+.login-form-wrapper .login-form__button:hover {
+  background-color: #bb86fc;
+}
+
+.login-form-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 140px;
+}
+
+.login-form__heading{
+  color: #bb86fc;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 2em;
+}
+
+.login-form__or{
+  color: white;
+  align-self: center;
+}
+.login-form__hr{
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border-color: #4a1092;
+}
+.login-form__footing{
+  color: white;
+  opacity: 0.5;
+  padding-top: 10px;
+  font-family: "Montserrat", sans-serif;
+  align-self: center;
+}
+.login-form__footing span{
+   text-decoration: underline;
+   font-weight: 600;
+}
 
