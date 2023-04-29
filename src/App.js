@@ -5,7 +5,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Find from './pages/Find';
 import How from './pages/How';
-
+import Signup from './pages/signup';
 
 import {
   BrowserRouter as Router,
@@ -27,7 +27,7 @@ function App() {
       <Route path="/how" element={<How/>} />
       <Route path="/find" element={<Find/>} />
       <Route path="/login" element={<Login/>} />
-      <Route path='/signup' element={<Home/>} />
+      <Route path='/signup' element={<Signup/>} />
      </Routes>
     <Footer/> 
       
