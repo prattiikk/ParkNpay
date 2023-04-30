@@ -469,12 +469,13 @@ footer p {
     font-size: medium;
     opacity: 0.7;
     width: 500px;
+    margin:20px;
   }
   .search-form {
     width: 600px;
     display: grid;
-    grid-template-rows: repeat(1fr,4);
-    row-gap: 2px;
+    grid-template-rows: 0.7fr 0.3fr;
+    row-gap: 30px;
     background-color: #31006c;
     padding: 14px;
     margin: 10px auto;
@@ -482,9 +483,9 @@ footer p {
   }
   
   .form-group {
-    margin: 0px 1px;
+    margin: 20px 1px;
     display: grid;
-    grid-template-columns: 0.7fr 1.3fr;
+    grid-template-rows: 1fr 1fr;
     padding: 6px;
   }
   
@@ -511,7 +512,8 @@ footer p {
   }
   
   
-  button[type="submit"] {
+  button[type="submit"],
+  button[type="button"] {
     background-color: black;
     border: 2px solid white;
     color: #eee;
@@ -522,13 +524,18 @@ footer p {
     transition: background-color 0.2s ease;
   }
   
-  button[type="submit"]:hover {
+  
+  button[type="submit"]:hover,
+  button[type="Button"]:hover {
     background-color: #bb86fc;
     color: white;
   }
   
-
-
+.buttons-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
 
 
 

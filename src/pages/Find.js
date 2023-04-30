@@ -1,25 +1,30 @@
 import React from "react";
 import axios from "axios";
-// eslint-disable-next-line 
 import Map from "../components/Map";
+// eslint-disable-next-line 
+
 
 const Find = () => {
-  async function position(data){
-    let info=await axios.post('user/near',{
-      latitude:data.coords.latitude,
-      longitude:data.coords.longitude,
-      radius:100
-     })
-     console.log(info.data[0])
-   }
-  function near(){
-         navigator.geolocation.getCurrentPosition(position);
+  async function position(data) {
+    let info = await axios.post('user/near', {
+      latitude: data.coords.latitude,
+      longitude: data.coords.longitude,
+      radius: 100
+    })
+    console.log(info.data[0])
+  }
+  function near() {
+    navigator.geolocation.getCurrentPosition(position);
   }
   return (
     <>
       <div class="form__wrapper">
         {/* <Map placeName={"Pune"}/> */}
-        <div id="map"></div>
+
+
+        <div id="map">
+          <Map lat={51.505} lon={-0.09} />;
+        </div>
         <div class="form__right">
           <div class="form__heading">
             <h1>
@@ -32,10 +37,14 @@ const Find = () => {
           </div>
           <form class="search-form">
             <div class="form-group">
-              <label for="location">Location </label>
+              <label for="location">Location</label>
               <input type="text" id="location" name="location" required />
             </div>
-            <button onClick={near} type="submit">Search</button>
+            <div class="buttons-container">
+              <button onClick={near} type="submit">Search</button>
+              <button onClick={near} type="Button">Book</button>
+              <button onClick={near} type="Button">Cancel</button>
+            </div>
           </form>
         </div>
       </div>
