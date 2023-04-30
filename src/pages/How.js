@@ -4,9 +4,7 @@ import {Link} from 'react-router-dom'
 const How = () => {
   return (
     <>
-    <section className="learn-sec-wra
-    
-    pper">
+    <section className="learn-sec-wrapper">
       <div>
         <h2>
           Discover the <span>easiest</span> way to secure a parking space for
