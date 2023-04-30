@@ -492,11 +492,12 @@ footer p {
     font-weight: bold;
     font-size: 1.6em;
     margin: 22px 8px;
+    color: white;
   }
   
   input[type="text"],
-  input[type="date"],
-  input[type="time"] {
+  input[type="email"],
+  input[type="password"] {
   
     align-self: center;
     border: none;
@@ -509,18 +510,6 @@ footer p {
     margin-right: 10px;
   }
   
-  input[type="time"]::-webkit-calendar-picker-indicator {
-    background-color: white;
-    border: none;
-    padding: 0;
-    margin-left: 5px;
-    cursor: pointer;
-  }
-  
-  input[type="time"]::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-  }
   
   button[type="submit"] {
     background-color: black;
@@ -735,7 +724,7 @@ footer p {
 .login-form-wrapper .login-form {
   display: flex;
   flex-direction: column;
-  width: 500px;
+  width: 600px;
   margin: 2px auto;
   padding: 40px;
   border: 2px solid #ccc;
@@ -747,7 +736,21 @@ footer p {
   margin-bottom: 10px;
   font-size: 20px;
   color: white;
+  display: grid;
+  
 }
+.login-form-wrapper .login-form__label--signup{
+  color: white;
+  font-size: 20px;
+  text-transform: capitalize;
+  font-family: 'Poppins',sans-serif;
+  margin: 0px 10px;
+}
+.login-form-wrapper .label-grp{
+  display: flex;
+  flex-direction: column;
+}
+
 .login-form-wrapper .login-form__input {
   padding: 10px;
   background-color: black;
@@ -808,4 +811,3 @@ footer p {
    text-decoration: underline;
    font-weight: 600;
 }
-

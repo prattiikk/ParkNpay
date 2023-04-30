@@ -30,7 +30,7 @@ const Login = () => {
         <button className='login-form__button' onClick={login} type="submit">Submit</button>
         <hr className='login-form__hr'></hr>
         <p className='login-form__or'>or</p>
-        <h3 className='login-form__footing'>Not a user? <span> <Link id='sign-up-now' to='signup.js'>sign-up</Link> </span></h3>
+        <h3 className='login-form__footing'>Not a user? <span> <Link id='sign-up-now' to='/signup'>sign-up</Link> </span></h3>
       </form>
     </div>
     <hr></hr>

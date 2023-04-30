@@ -35,18 +35,6 @@ const Find = () => {
               <label for="location">Location </label>
               <input type="text" id="location" name="location" required />
             </div>
-            <div class="form-group">
-              <label for="check-in">Check-in </label>
-              <input type="date" id="check-in" name="check-in" />
-            </div>
-            <div class="form-group">
-              <label for="check-out">Check-out </label>
-              <input type="date" id="check-out" name="check-out" />
-            </div>
-            <div class="form-group">
-              <label for="time">Time </label>
-              <input type="time" id="time" name="time" />
-            </div>
             <button onClick={near} type="submit">Search</button>
           </form>
         </div>
