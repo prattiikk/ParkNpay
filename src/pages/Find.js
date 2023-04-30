@@ -1,17 +1,57 @@
 import React from "react";
 import axios from "axios";
+import { useState } from "react";
 import Map from "../components/Map";
 // eslint-disable-next-line 
 
 
 const Find = () => {
-  async function position(data) {
-    let info = await axios.post('user/near', {
-      latitude: data.coords.latitude,
-      longitude: data.coords.longitude,
-      radius: 100
+  const [latitude,setlatitude]=useState("0");
+  const [longitude,setlongitude]=useState("0");
+  const [parkdata,setparkdata]=useState("");
+async function cancel(){
+  try{
+      let info=await axios.post('/user/cancel');
+      alert(info.data.message);
+  }catch(err){
+      alert(err.response.data.message);
+  }
+}
+
+  function book() {
+    if(parkdata==""){
+      alert("search first for booking parking spots");
+    }else{
+      axios.post('/user/book',{owned_id:parkdata.owned_id}).then((response)=>{
+        alert(response.data.message);
+      }).catch((error)=>{
+        alert(error.response.data.error);
+      });
+  }
+  
+}
+
+  function updatepos(lat,lon){
+    setlatitude(lat);
+    setlongitude(lon);
+  }
+  function position(data) {
+        axios.post('user/near', {
+        latitude: data.coords.latitude,
+        longitude: data.coords.longitude,
+        radius: 10
+      }).then((info)=>{
+                console.log(info);
+                if(info.data!=''){
+                  setparkdata(info.data[0]);
+                  updatepos(info.data[0].latitude,info.data[0].longitude);
+                  alert("Showing nearest spot");
+                }else{
+                  alert("No parking spots found");
+                }
+      }).catch((error)=>{
+      console.log(error);
     })
-    console.log(info.data[0])
   }
   function near() {
     navigator.geolocation.getCurrentPosition(position);
@@ -23,7 +63,7 @@ const Find = () => {
 
 
         <div id="map">
-          <Map lat={51.505} lon={-0.09} />;
+          <Map lat={latitude} lon={longitude} />;
         </div>
         <div className="form__right">
           <div className="form__heading">
@@ -37,13 +77,13 @@ const Find = () => {
           </div>
           <form className="search-form">
             <div className="form-group">
-              <label for="location">Location</label>
+              <label id="address">Location</label>
               <input type="text" id="location" name="location" required />
             </div>
             <div className="buttons-container">
               <button onClick={near} type="submit">Search</button>
-              <button onClick={near} type="Button">Book</button>
-              <button onClick={near} type="Button">Cancel</button>
+              <button onClick={book} type="Button">Book</button>
+              <button onClick={cancel} type="Button">Cancel</button>
             </div>
           </form>
         </div>

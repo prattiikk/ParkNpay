@@ -10,6 +10,7 @@ const Login = () => {
       })
       localStorage.setItem("user_id", info.data.user_id);
       console.log(localStorage.getItem("user_id"))
+      alert("logged in")
     } catch (err) {
       alert("Wrong username or password !!!")
     }
