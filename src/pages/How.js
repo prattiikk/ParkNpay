@@ -4,7 +4,9 @@ import {Link} from 'react-router-dom'
 const How = () => {
   return (
     <>
-    <section class="learn-sec-wrapper">
+    <section className="learn-sec-wra
+    
+    pper">
       <div>
         <h2>
           Discover the <span>easiest</span> way to secure a parking space for
@@ -18,8 +20,8 @@ const How = () => {
         </p>
       </div>
       <hr />
-      <div class="learn-sec-container">
-        <div class="learn__child">
+      <div className="learn-sec-container">
+        <div className="learn__child">
           <h4>
             <span>1.</span> Booking a parking space has never been easier.
           </h4>
@@ -28,7 +30,7 @@ const How = () => {
             and with just a tap, your space is guaranteed in seconds.
           </p>
         </div>
-        <div class="learn__child">
+        <div className="learn__child">
           <h4>
             <span>2.</span> Best of all, our service is completely
             <span>Free.</span>
@@ -38,7 +40,7 @@ const How = () => {
             breeze.
           </p>
         </div>
-        <div class="learn__child">
+        <div className="learn__child">
           <h4>
             <span>3.</span> Once you've booked, everything is taken care of.
           </h4>
@@ -48,10 +50,10 @@ const How = () => {
             a breeze.
           </p>
         </div>
-        <div class="learn__child" id="first"></div>
-        <div class="learn__child" id="second"></div>
+        <div className="learn__child" id="first"></div>
+        <div className="learn__child" id="second"></div>
       </div>
-      <div class="main-text"><Link className="main-text__link" to="/find" >find a spot!</Link></div>
+      <div className="main-text"><Link className="main-text__link" to="/find" >find a spot!</Link></div>
     </section>
     <hr />
     </>

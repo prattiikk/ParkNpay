@@ -1,9 +1,12 @@
+
+
+
 import React from 'react'
 
 const Footer = () => {
   return (
     <footer>
-      <div class="wrap-footer">
+      <div className="wrap-footer">
         <h2>Pay<span>N</span>park</h2>
         <p>
           Our platform was developed by a group of college students as a
@@ -14,7 +17,7 @@ const Footer = () => {
           of finding available options for parking.
         </p>
       </div>
-      <div class="icons">
+      <div className="icons">
         <ul>
           <li><a href="#">Twitter</a></li>
           <li><a href="#">Facebook</a></li>
@@ -23,7 +26,7 @@ const Footer = () => {
           <li><a href="#">Contact</a></li>
         </ul>
       </div>
-      <p class="copyright">&copy; 2023 PayNpark</p>
+      <p className="copyright">&copy; 2023 PayNpark</p>
     </footer>
   )
 }

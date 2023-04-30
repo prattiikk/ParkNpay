@@ -18,15 +18,15 @@ const Find = () => {
   }
   return (
     <>
-      <div class="form__wrapper">
-        {/* <Map placeName={"Pune"}/> */}
+      <div className="form__wrapper">
+
 
 
         <div id="map">
           <Map lat={51.505} lon={-0.09} />;
         </div>
-        <div class="form__right">
-          <div class="form__heading">
+        <div className="form__right">
+          <div className="form__heading">
             <h1>
               Parking sorted in <span>seconds.</span>
             </h1>
@@ -35,12 +35,12 @@ const Find = () => {
               perfect space for you.
             </p>
           </div>
-          <form class="search-form">
-            <div class="form-group">
+          <form className="search-form">
+            <div className="form-group">
               <label for="location">Location</label>
               <input type="text" id="location" name="location" required />
             </div>
-            <div class="buttons-container">
+            <div className="buttons-container">
               <button onClick={near} type="submit">Search</button>
               <button onClick={near} type="Button">Book</button>
               <button onClick={near} type="Button">Cancel</button>
@@ -49,13 +49,13 @@ const Find = () => {
         </div>
       </div>
       <hr />
-      <section class="find-sec-a">
-        <div class="find-sec-a-left"></div>
-        <div class="find-sec-a-right">
-          <p class="main-text-sec-a">
+      <section className="find-sec-a">
+        <div className="find-sec-a-left"></div>
+        <div className="find-sec-a-right">
+          <p className="main-text-sec-a">
             Guarantee your <span>Space</span> before you set off.
           </p>
-          <p class="main-text-sec-a-sub">
+          <p className="main-text-sec-a-sub">
             Our huge network of bookable parking spaces & driveways gets you
             closer to where you need to be. By reserving your parking, you’ll
             save time & money on all your journeys, whether it’s your daily

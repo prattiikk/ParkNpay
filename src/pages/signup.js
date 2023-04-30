@@ -1,3 +1,5 @@
+
+
 import React from 'react'
 import axios from 'axios';
 import { Link } from 'react-router-dom';
@@ -19,6 +21,7 @@ export default function signup() {
       if (info.data.message == "user exists") {
         alert("Try again username exists")
       } else {
+        alert("Login user saved")
         console.log(details.username)
       }
     } catch (err) {

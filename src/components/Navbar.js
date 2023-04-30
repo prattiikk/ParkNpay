@@ -3,9 +3,9 @@ import {Link} from 'react-router-dom'
 const Navbar = () => {
   return (
     <div>
-      <nav class="navbar">
-        <div class="navbar__logo"><Link to="/" className='Link'>Pay<span>N</span>park</Link></div>
-        <div class="navbar__menu">
+      <nav className="navbar">
+        <div className="navbar__logo"><Link to="/" className='Link'>Pay<span>N</span>park</Link></div>
+        <div className="navbar__menu">
           <ul>
             <li><Link to="/" className='Link'>home</Link></li>
             <li><Link to="/how" className='Link'>How it works?</Link></li>

@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import axios from 'axios';
-import { eventWrapper } from '@testing-library/user-event/dist/utils';
+
 const Login = () => {
   async function login() {
     try {
@@ -8,8 +8,8 @@ const Login = () => {
         username: document.getElementById("username").value,
         password: document.getElementById("password").value
       })
-      localStorage.setItem("user", info.data.user);
-      console.log(localStorage.getItem("user"))
+      localStorage.setItem("user_id", info.data.user_id);
+      console.log(localStorage.getItem("user_id"))
     } catch (err) {
       alert("Wrong username or password !!!")
     }
@@ -18,7 +18,7 @@ const Login = () => {
     <>
     <div className='login-form-wrapper'>
       <h3 className='login-form__heading'>Login</h3>
-      <form className="login-form" >
+      <div className="login-form" >
         <label className='login-form__label'>
           Username
           <input className='login-form__input' id='username' type="text" />
@@ -31,7 +31,7 @@ const Login = () => {
         <hr className='login-form__hr'></hr>
         <p className='login-form__or'>or</p>
         <h3 className='login-form__footing'>Not a user? <span> <Link id='sign-up-now' to='/signup'>sign-up</Link> </span></h3>
-      </form>
+      </div>
     </div>
     <hr></hr>
     </>
