@@ -5,7 +5,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Find from './pages/Find';
 import How from './pages/How';
-
+import Signup from './pages/signup';
 
 import {
   BrowserRouter as Router,
@@ -15,6 +15,7 @@ import {
 } from "react-router-dom";
 
 import './App.css';
+import Login from './pages/login';
 
 
 function App() {
@@ -25,6 +26,8 @@ function App() {
       <Route path="/" element={<Home/>} />
       <Route path="/how" element={<How/>} />
       <Route path="/find" element={<Find/>} />
+      <Route path="/login" element={<Login/>} />
+      <Route path='/signup' element={<Signup/>} />
      </Routes>
     <Footer/> 
       
